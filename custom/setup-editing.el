@@ -255,4 +255,13 @@ Position the cursor at it's beginning, according to the current mode."
 (global-set-key (kbd "M-o") 'prelude-smart-open-line)
 (global-set-key (kbd "M-o") 'open-line)
 
+(global-set-key (kbd "C-h") 'delete-backward-char)
+(global-set-key (kbd "C-x h") 'help-command)
+(define-key helm-find-files-map (kbd "C-h") nil)
+
+(global-set-key (kbd "C-z") 'undo-tree-undo)
+(global-set-key (kbd "M-z") 'undo-tree-redo)
+
+
+
 (provide 'setup-editing)
